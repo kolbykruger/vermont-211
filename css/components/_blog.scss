@@ -59,7 +59,7 @@
 
         &:hover,
         &:focus{
-            box-shadow: $box-shadow-2;
+            box-shadow: $box-shadow-1;
         }
     }
 
@@ -83,7 +83,6 @@
     }
 
     .title {
-        @include fs(24px);
         margin: 0;
     }
 
