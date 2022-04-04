@@ -2130,10 +2130,6 @@ p.simplesearch-results, figure:not(.fig) figcaption.simplesearch-results, .foote
       -ms-flex-pack: center;
           justify-content: center;
 }
-.blog a {
-  text-decoration: none;
-  color: inherit;
-}
 .blog .post {
   width: calc(33.333% - 2em);
   margin: 1em;
@@ -2142,6 +2138,10 @@ p.simplesearch-results, figure:not(.fig) figcaption.simplesearch-results, .foote
   background: #fff;
   -webkit-transition: 185ms ease;
   transition: 185ms ease;
+}
+.blog .post a {
+  text-decoration: none;
+  color: inherit;
 }
 .blog .post:hover, .blog .post:focus {
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 23, 41, 0.1);
@@ -2799,6 +2799,11 @@ table td {
   padding: 5em 3em;
   max-width: 100%;
 }
+@media (max-width: 1400px) {
+  .announcement .container {
+    padding: 2em;
+  }
+}
 .announcement .buttons {
   margin-top: 2em;
 }
@@ -3010,8 +3015,18 @@ table td {
 .brand-slider .flickity-prev-next-button.previous {
   left: -4vw;
 }
+@media (max-width: 1400px) {
+  .brand-slider .flickity-prev-next-button.previous {
+    left: 2vw;
+  }
+}
 .brand-slider .flickity-prev-next-button.next {
   right: -4vw;
+}
+@media (max-width: 1400px) {
+  .brand-slider .flickity-prev-next-button.next {
+    right: 2vw;
+  }
 }
 .brand-slider .flickity-prev-next-button svg path {
   fill: #001729;

@@ -19,10 +19,18 @@
 
         &.previous {
             left: -4vw;
+
+            @media (max-width: 1400px) {
+                left: 2vw;
+            }
         }
 
         &.next {
             right: -4vw;
+
+            @media (max-width: 1400px) {
+                right: 2vw;
+            }
         }
 
         svg path {
